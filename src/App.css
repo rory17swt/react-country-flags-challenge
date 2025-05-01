@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.flags {
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(235, 230, 230);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.flags img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}

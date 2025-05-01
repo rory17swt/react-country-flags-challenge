@@ -27,18 +27,22 @@ export default function App() {
 
   return (
     <>
-    {countries.length > 0 &&
-    countries.map(flag => {
-      return (
-        <div key={flag.name.common}>
-          <h2>{flag.name.common}</h2>
-          <h3>{flag.name.official}</h3>
-          <img src={flag.flags.png}></img>
+      {countries.length > 0 && (
+        <div className="grid-container">
+          {countries.map(flag => {
+            return (
+              <div className='flags' key={flag.name.common}>
+                <h2>{flag.name.common}</h2>
+                <h3>{flag.name.official}</h3>
+                <img src={flag.flags.png} />
+              </div>
+            )
+          })}
         </div>
-      )
-    })}
+      )}
     </>
   )
+  
 
 }
 
